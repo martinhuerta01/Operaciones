@@ -1,0 +1,12 @@
+line-length = 88
+target-version = "py311"
+extend-exclude = [".venv", "**/migrations/*.py"]
+
+[lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "DJ"]
+# RUF012 no aplica a las clases Meta de Django.
+ignore = ["RUF012"]
+
+[lint.per-file-ignores]
+# Los nombres de validadores de contraseña de Django son largos por definición.
+"config/settings.py" = ["E501"]
