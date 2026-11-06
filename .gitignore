@@ -1,0 +1,25 @@
+# Entorno y secretos
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+
+# Base de datos local y archivos generados
+db.sqlite3
+*.sqlite3
+staticfiles/
+media/
+
+# Editor / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
